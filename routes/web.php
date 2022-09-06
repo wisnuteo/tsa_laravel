@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return "Selamat Datang";
+// });
+
+// Route::get('/about', function () {
+//     return "Nama : Teo Wisnu Widiantoro <br> NIM : 2241727038 <br> Kelas : TSA WEB - B";
+// });
+
+Route::get('/articles/{id}', function ($id) {
+    return "Halaman artikel dengan ID".$id;
 });
+
+
+
